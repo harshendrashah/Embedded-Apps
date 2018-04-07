@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NumberShapesActivity">
+
+    <TextView
+        android:id="@+id/titleNS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="Number Shapes"
+        android:textSize="24dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/introNS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter a number below to find out whether the number is a triangular number or square number."
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/titleNS" />
+
+    <EditText
+        android:id="@+id/inputNS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:inputType="number"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/introNS" />
+
+    <Button
+        android:id="@+id/buttonNS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:onClick="onButtonClick"
+        android:text="Test Number"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/inputNS" />
+
+</android.support.constraint.ConstraintLayout>

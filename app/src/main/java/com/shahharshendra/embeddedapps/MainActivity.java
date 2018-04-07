@@ -40,8 +40,14 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(MainActivity.this, (position + 1) + " " + demoApps.get(position), Toast.LENGTH_SHORT).show();
 
                 Intent intent = new Intent();
-                if (position == 0) {
-                    intent = new Intent(MainActivity.this, CurrencyConverterActivity.class);
+
+                switch (position) {
+                    case 0 :
+                        intent = new Intent(MainActivity.this, CurrencyConverterActivity.class);
+                        break;
+                    case 1 :
+                        intent = new Intent(MainActivity.this, NumberShapesActivity.class);
+                        break;
                 }
                 startActivity(intent);
             }
