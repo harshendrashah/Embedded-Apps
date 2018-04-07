@@ -51,6 +51,9 @@ public class MainActivity extends AppCompatActivity {
                     case 2 :
                         intent = new Intent(MainActivity.this, HigherOrLowerActivity.class);
                         break;
+                    case 3 :
+                        intent = new Intent(MainActivity.this, BasicPhrasesActivity.class);
+                        break;
                 }
                 startActivity(intent);
             }

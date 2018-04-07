@@ -18,7 +18,8 @@
         </activity>
         <activity android:name=".CurrencyConverterActivity" />
         <activity android:name=".NumberShapesActivity" />
-        <activity android:name=".HigherOrLowerActivity"></activity>
+        <activity android:name=".HigherOrLowerActivity" />
+        <activity android:name=".BasicPhrasesActivity"></activity>
     </application>
 
 </manifest>
