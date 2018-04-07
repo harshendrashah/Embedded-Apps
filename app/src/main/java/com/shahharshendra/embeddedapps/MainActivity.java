@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         demoApps.add("Number Shapes");
         demoApps.add("Higher or Lower");
         demoApps.add("Basic Phrases");
-        demoApps.add("Times Table");
+        demoApps.add("Times Tables");
         demoApps.add("Time Counter");
         demoApps.add("Guess The Celebrity");
 
@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Toast.makeText(MainActivity.this, (position + 1) + ". " + demoApps.get(position), Toast.LENGTH_SHORT).show();
 
-                Intent intent = new Intent();
+                Intent intent;
 
                 switch (position) {
                     case 0 :
@@ -54,6 +54,11 @@ public class MainActivity extends AppCompatActivity {
                     case 3 :
                         intent = new Intent(MainActivity.this, BasicPhrasesActivity.class);
                         break;
+                    case 4 :
+                        intent = new Intent(MainActivity.this, TimesTablesActivity.class);
+                        break;
+                    default:
+                        intent = new Intent(MainActivity.this, MainActivity.class);
                 }
                 startActivity(intent);
             }

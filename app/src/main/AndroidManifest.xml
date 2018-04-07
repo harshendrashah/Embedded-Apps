@@ -19,7 +19,8 @@
         <activity android:name=".CurrencyConverterActivity" />
         <activity android:name=".NumberShapesActivity" />
         <activity android:name=".HigherOrLowerActivity" />
-        <activity android:name=".BasicPhrasesActivity"></activity>
+        <activity android:name=".BasicPhrasesActivity" />
+        <activity android:name=".TimesTablesActivity"></activity>
     </application>
 
 </manifest>
