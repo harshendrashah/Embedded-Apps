@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CurrencyConverterActivity">
+
+    <EditText
+        android:id="@+id/editTextCc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter ammount in Dollars"
+        android:inputType="number"
+        android:layout_margin="10dp"/>
+
+    <Button
+        android:id="@+id/buttonCc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Convert"
+        tools:layout_editor_absoluteX="147dp"
+        tools:layout_editor_absoluteY="94dp"
+        tools:text="Convert"
+        android:layout_below="@id/editTextCc"
+        android:layout_centerHorizontal="true"
+        android:onClick="convert"/>
+
+    <ImageView
+        android:id="@+id/imageViewCc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/currency"
+        android:layout_below="@id/buttonCc"/>
+
+</RelativeLayout>

@@ -1,5 +1,6 @@
 package com.shahharshendra.embeddedapps;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -37,6 +38,12 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Toast.makeText(MainActivity.this, (position + 1) + " " + demoApps.get(position), Toast.LENGTH_SHORT).show();
+
+                Intent intent = new Intent();
+                if (position == 0) {
+                    intent = new Intent(MainActivity.this, CurrencyConverterActivity.class);
+                }
+                startActivity(intent);
             }
         });
     }
