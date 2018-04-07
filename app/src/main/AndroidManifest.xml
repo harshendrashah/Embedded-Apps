@@ -20,7 +20,8 @@
         <activity android:name=".NumberShapesActivity" />
         <activity android:name=".HigherOrLowerActivity" />
         <activity android:name=".BasicPhrasesActivity" />
-        <activity android:name=".TimesTablesActivity"></activity>
+        <activity android:name=".TimesTablesActivity" />
+        <activity android:name=".TimeCounterActivity"></activity>
     </application>
 
 </manifest>
