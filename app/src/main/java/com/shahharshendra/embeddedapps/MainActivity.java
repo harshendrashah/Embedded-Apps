@@ -57,8 +57,12 @@ public class MainActivity extends AppCompatActivity {
                     case 4 :
                         intent = new Intent(MainActivity.this, TimesTablesActivity.class);
                         break;
+                    case 5 :
+                        intent = new Intent(MainActivity.this, TimeCounterActivity.class);
+                        break;
                     default:
                         intent = new Intent(MainActivity.this, MainActivity.class);
+                        break;
                 }
                 startActivity(intent);
             }

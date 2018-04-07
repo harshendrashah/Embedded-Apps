@@ -56,8 +56,8 @@ public class TimeCounterActivity extends AppCompatActivity {
                 @Override
                 public void onFinish() {
                     resetTimer();
-                    //MediaPlayer mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.airhorn);
-                    //mediaPlayer.start();
+                    MediaPlayer mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.airhorn);
+                    mediaPlayer.start();
 
                 }
             }.start();
