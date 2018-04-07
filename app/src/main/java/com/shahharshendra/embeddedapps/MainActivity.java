@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Toast.makeText(MainActivity.this, (position + 1) + " " + demoApps.get(position), Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, (position + 1) + ". " + demoApps.get(position), Toast.LENGTH_SHORT).show();
 
                 Intent intent = new Intent();
 
@@ -47,6 +47,9 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case 1 :
                         intent = new Intent(MainActivity.this, NumberShapesActivity.class);
+                        break;
+                    case 2 :
+                        intent = new Intent(MainActivity.this, HigherOrLowerActivity.class);
                         break;
                 }
                 startActivity(intent);

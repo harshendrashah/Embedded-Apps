@@ -17,7 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".CurrencyConverterActivity" />
-        <activity android:name=".NumberShapesActivity"></activity>
+        <activity android:name=".NumberShapesActivity" />
+        <activity android:name=".HigherOrLowerActivity"></activity>
     </application>
 
 </manifest>
