@@ -60,6 +60,9 @@ public class MainActivity extends AppCompatActivity {
                     case 5 :
                         intent = new Intent(MainActivity.this, TimeCounterActivity.class);
                         break;
+                    case 6 :
+                        intent = new Intent(MainActivity.this, GuessTheCelebrityActivity.class);
+                        break;
                     default:
                         intent = new Intent(MainActivity.this, MainActivity.class);
                         break;
